@@ -1,0 +1,32 @@
+### Fetch all drivers
+
+GET http://localhost:3000/driver
+
+### Fetch single driver with id
+
+GET http://localhost:3000/driver/64ae7470df9acc03cb44d540
+
+### Create a new driver
+
+POST http://localhost:3000/driver
+Content-Type: application/json
+
+{
+    "name": "Aditya Garudkar",
+    "email": "garudkaraditya16@gmail.com",
+    "phone": "+917887808217"
+}
+
+### Update a driver
+
+PATCH http://localhost:3000/driver/64ae7470df9acc03cb44d540
+Content-Type: application/json
+
+{
+    "name": "Girish Garudkar",
+  "phone": "+917887808217"
+}
+
+### delete a driver
+
+DELETE http://localhost:3000/driver/64ac205ca169d8ff5dd4e681
