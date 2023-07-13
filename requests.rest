@@ -23,7 +23,7 @@ PATCH http://localhost:3000/driver/64ae7470df9acc03cb44d540
 Content-Type: application/json
 
 {
-    "name": "Girish Garudkar",
+    "name": "Aditya Garudkar",
   "phone": "+917887808217"
 }
 
@@ -48,3 +48,14 @@ GET http://localhost:3000/cab
 ###
 
 GET http://localhost:3000/cab/64aff8eb00089cd99776695e
+
+###
+
+POST https://cab-management.onrender.com/driver
+Content-Type: application/json
+
+{
+  "name": "Prashant Garudkar",
+  "email": "prashantgarudkar5@gmail.com",
+  "phone": "+918669230176"
+}

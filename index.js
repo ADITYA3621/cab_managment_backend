@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 const {connect} = require('mongoose')
 const dotenv = require('dotenv')
 const driverRouter = require('./routes/driver')
@@ -8,7 +9,7 @@ dotenv.config()
 
 const app = express()
 const PORT = 3000
-
+app.use(cors())
 app.use(express.json())
 app.use('/driver', driverRouter)
 app.use('/cab',cabRouter)
