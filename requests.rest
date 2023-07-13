@@ -13,7 +13,7 @@ Content-Type: application/json
 
 {
     "name": "Aditya Garudkar",
-    "email": "garudkaraditya16@gmail.com",
+    "email": "garudkaraditya20@gmail.com",
     "phone": "+917887808217"
 }
 
@@ -30,3 +30,21 @@ Content-Type: application/json
 ### delete a driver
 
 DELETE http://localhost:3000/driver/64ac205ca169d8ff5dd4e681
+
+### add cab
+
+POST http://localhost:3000/cab
+Content-Type: application/json
+
+{
+  "color" : "white",
+  "model" : "altroz"
+}
+
+### get cab
+
+GET http://localhost:3000/cab
+
+###
+
+GET http://localhost:3000/cab/64aff8eb00089cd99776695e
